@@ -3,4 +3,8 @@
     <string name="login_edit_text_username_hint">Username</string>
     <string name="login_edit_text_password_hint">Password</string>
     <string name="login_button_text">Submit</string>
+    <string name="button_heart_textview">Button 1</string>
+    <string name="button_message_textview">Button 2</string>
+    <string name="button_settings_textview">Button 3</string>
+    <string name="button_logout_textview">Button 4</string>
 </resources>

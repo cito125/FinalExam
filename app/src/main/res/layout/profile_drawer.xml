@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorUserBackgroundInProfileDrawer">
+
+        <include
+            layout="@layout/profile_imageview_user"
+            android:layout_width="@dimen/profile_image_height_and_width"
+            android:layout_height="@dimen/profile_image_height_and_width"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundItemsInProfileDrawer"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profile_drawer_heart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_drawer_list_item_height">
+
+            <include
+                android:id="@+id/drawer_button_icon"
+                layout="@layout/profile_button_heart"
+
+                android:layout_width="@dimen/profile_drawer_icon_width_height"
+                android:layout_height="@dimen/profile_drawer_icon_width_height"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/drawer_icon_leftpadding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/drawer_button_icon"
+                android:text="@string/button_heart_textview" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_drawer_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_drawer_list_item_height">
+
+            <include
+                android:id="@id/drawer_button_icon"
+                layout="@layout/profile_button_message"
+                android:layout_width="@dimen/profile_drawer_icon_width_height"
+                android:layout_height="@dimen/profile_drawer_icon_width_height"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/drawer_icon_leftpadding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/drawer_button_icon"
+                android:text="@string/button_message_textview" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/profile_drawer_settings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_drawer_list_item_height">
+
+            <include
+                android:id="@id/drawer_button_icon"
+                layout="@layout/profile_button_settings"
+
+                android:layout_width="@dimen/profile_drawer_icon_width_height"
+                android:layout_height="@dimen/profile_drawer_icon_width_height"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/drawer_icon_leftpadding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/drawer_button_icon"
+                android:text="@string/button_settings_textview" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_drawer_logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_drawer_list_item_height">
+
+            <include
+                android:id="@id/drawer_button_icon"
+                layout="@layout/profile_button_logout"
+
+                android:layout_width="@dimen/profile_drawer_icon_width_height"
+                android:layout_height="@dimen/profile_drawer_icon_width_height"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/drawer_icon_leftpadding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/drawer_button_icon"
+                android:text="@string/button_settings_textview" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
